@@ -1,0 +1,93 @@
+#novosti{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(slike/novosti.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #041e42;
+}
+#novosti h4{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+#novosti p{
+    font-size: 15px;
+    font-weight: 600;
+    color: red;
+}
+#novosti p span{
+    color: #ffbd27;
+}
+#novosti .forma {
+    display: flex;
+    width: 40%;
+}
+#novosti input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#novosti button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.prozor-preklapanje {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+/*popup prozor*/
+.prozor-sadrzaj {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+.prozor-preklapanje button{
+    height: 60px;
+    background-color: #088178;
+}
+@media only screen and (max-width: 800px){
+    #novosti{
+        width: 79%;
+        background-image: none;
+    }
+    #novosti .novostekst h4{
+        font-size: 15px;
+    }
+    #novosti input{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #novosti{
+        width: 79%;
+        background-image: none;
+    }
+    #novosti .novostekst h4{
+        font-size: 15px;
+    }
+    #novosti input{
+        width: 500px;
+    }
+}

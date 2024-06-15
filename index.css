@@ -1,0 +1,508 @@
+/*pocetno*/
+h1{
+    font-size: 50px;
+    line-height: 60px;
+    color: #222;
+}
+h2{
+    font-size: 45px;
+    line-height: 50px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-size: 15px;
+    font-weight: 700;
+}
+p{
+    font-size: 40px;
+    color: #222;
+    margin: 10px 0 20px 0;
+}
+.sekcija-p1{
+    padding: 40px 80px;
+}
+.sekcija-m1{
+    margin: 40px 0;
+}
+button.dugmeNovosti{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+    background-color: #e3e6f3;
+}
+/*naslovna*/
+#zaglavlje{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+    z-index: 999;
+    padding: 20px 80px;
+    background-color: #E3e6f3;
+    position: sticky;
+    top: 0;
+    left: 0
+}
+#navdeo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navdeo li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navdeo li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navdeo li a:hover,
+#navdeo li a.aktivno{
+    color: #088178;
+}
+#napocetnoj{
+    margin-top: 0;
+    margin-left: 10%;
+}
+#napocetnoj button{
+    padding: 15px;
+    background: #324563;
+    color: #dedede;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    font-weight: 700;
+}
+@keyframes fejdAnimacija{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+#napocetnoj .fejd{
+    animation: fejdAnimacija 3s infinite alternate;
+    color: red;
+}
+.slika{
+    background-image: url(slike/zaza.jpg);
+    height: 90vh;
+    width: 100%;
+    margin-left: 20%;
+    max-width: 350px;
+    background-size: cover;
+    padding: 0 80px;
+    transition: all 2s ease-in-out;
+}
+.slika:hover{
+    transform: scale(0);
+}
+.red{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+#prednosti{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#prednosti .pr-kutija{
+    width: 180px;
+    height: 220px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 10px 10px 17px rgba(0,0,0,0.3);
+    border: 1px solid #cce7d0;
+    border-radius: 3px;
+    margin: 15px 0;
+}
+#prednosti .pr-kutija:hover{
+    box-shadow: 5px 5px 30px rgba(70,62,221,0.1);
+}
+#prednosti .pr-kutija img{
+    width: 80%;
+    margin-bottom: 10px;
+}
+#prednosti .pr-kutija h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #e3e6f3;
+}
+#produkt1{
+    text-align: center;
+}
+@keyframes boja{
+    from{color: red;}
+    to{color: blue;}
+}
+#produkt1 .tekst{
+    animation: boja 2s infinite alternate;
+}
+#produkt1 .pro-kontejner{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+#produkt1 .pro{
+    width: 18%;
+    height: 450px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.05);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+#produkt1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+}
+#produkt1 .pro .opis{
+    text-align: start;
+    padding: 10px 0;
+}
+#produkt1 .pro .opis span{
+    color: #606063;
+    font-size: 12px;
+}
+#produkt1 .pro .opis h5{
+    padding: 7px;
+    color: #1a1a1a;
+    font-size: 15px;
+}
+#produkt1 .pro .opis i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+#produkt1 .pro .opis h4{
+    padding-top: 7px;
+    font-weight: 700;
+    color: #088178;
+}
+#baneri{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#baneri .baneri-kutija{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(slike/agv.jpg);
+    min-width: 30%;
+    height: 32vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#baneri .baneri-kutija2{
+    background-image: url(slike/slika.jpg);
+}
+#baneri .baneri-kutija3{
+    background-image: url(slike/ban3.jpg);
+}
+#baneri h2{
+    color: #fff;
+    font-weight: 1200;
+    font-size: 25px;
+}
+#baneri h3{
+    color: #ec544e;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+/*hamburger*/
+.meni{
+    background-color: #e3e6f3;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 1;
+}
+.meni.aktivno {
+    right: 0;
+}
+.hamburger{
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-top: 0px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.hamburger span{
+    height: 5px;
+    width: 100%;
+    background-color: #088178;
+    box-shadow: 0 0 3px #e3e6f3;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, 50%);
+    transition: .3s ease;
+}
+.hamburger span:nth-child(1) {
+    top: 25%;
+}
+.hamburger.aktivno span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger span:nth-child(3) {
+    top: 75%;
+}
+
+.hamburger.aktivno{
+background-color:  #088178;
+}
+.hamburger.aktivno span {
+    background-color: white;
+
+}
+.hamburger.aktivno span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburgerM.aktivno span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.aktivno span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media only screen and (max-width: 1200px) {
+.meni {
+width: 35%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.meni {
+width: 30%;
+}
+}
+
+/*footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .kolona{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+    max-width: 150px;
+    max-height: 150px;
+}
+footer h4{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+footer .zaprati{
+    margin-top: 20px;
+}
+footer .zaprati i{
+    color: #465b52;
+    padding-right: 5px;
+    cursor: pointer;
+}
+footer .plati{
+    font-size: 20px;
+    font-weight: 800;
+}
+footer .plati img{
+    border: 1px solid #088178;
+    border-radius: 5px;
+    margin: 10px 0 15px 0;
+}
+footer .zaprati i:hover{
+    color: #088178;
+}
+footer .prava{
+    width: 100%;
+    text-align: center;
+}
+footer .prava .zaprati{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 800px){
+    #navdeo li a{
+        font-size: 15px;
+    }
+    #napocetnoj p, #napocetnoj span{
+        font-size: 15px;
+    }
+    #napocetnoj button{
+        width: 100px;
+    }
+    #prednosti .pr-kutija{
+        width: 91px;
+        height: 220px;
+    }
+    #produkt1 .tekst{
+        font-size: 25px;
+    }
+    #produkt1 .pro{
+        height: 350px;
+    }
+    #produkt1 .pro img{
+        width: 100px;
+        height: 100px;
+    }
+    #produkt1 .opis img{
+        width: 20px;
+        height: 20px;
+    }
+    #produkt1 .opis span, #produkt1 .opis h4{
+        font-size: 15px;
+    }  
+    #produkt1 .opis h5{
+        font-size: 20px;
+    }
+    #produkt1 .pro a img{
+        width: 40px;
+        height: 40px;
+    }
+    #baneri .baneri-kutija, #baneri .baneri-kutija h2{
+        width: 30px;
+        height: 150px;
+        font-size: 15px;
+    }
+    #baneri .baneri-kutija h3{
+        font-size: 13px;
+    }
+    footer h4{
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    footer .zaprati{
+        margin-right: 100px;
+        margin-top: 100px;
+    }
+    footer .plati{
+        margin-left: 200px;
+    }
+    footer .plati img{
+        margin-left: -100px;
+    }
+    footer .prava{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #navdeo li a{
+        font-size: 17px;
+    }
+    #navigacija{
+        display: none;
+    }
+    #napocetnoj p, #napocetnoj span{
+        font-size: 17px;
+    }
+    #napocetnoj button{
+        width: 130px;
+    }
+    #prednosti .pr-kutija{
+        width: 160px;
+        height: 220px;
+    }
+    #produkt1 .tekst{
+        font-size: 30px;
+    }
+    #produkt1 .pro{
+        height: 380px;
+    }
+    #produkt1 .pro img{
+        width: 120px;
+        height: 120px;
+    }
+    #produkt1 .opis img{
+        width: 25px;
+        height: 25px;
+    }
+    #produkt1 .opis span, #produkt1 .opis h4{
+        font-size: 17px;
+    }  
+    #produkt1 .opis h5{
+        font-size: 23px;
+    }
+    #produkt1 .pro a img{
+        width: 40px;
+        height: 40px;
+    }
+    #baneri .baneri-kutija, #baneri .baneri-kutija h2{
+        width: 40px;
+        height: 150px;
+        font-size: 17px;
+    }
+    #baneri .baneri-kutija h3{
+        font-size: 15px;
+    }
+    footer h4{
+        font-size: 17px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+    footer .plati{
+        margin-left: 200px;
+    }
+    footer .plati img{
+        margin-left: -100px;
+    }
+    footer .prava{
+        margin-top: 20px;
+    }
+}

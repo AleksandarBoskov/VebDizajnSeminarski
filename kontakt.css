@@ -1,0 +1,353 @@
+/*pocetno*/
+h1{
+    font-size: 50px;
+    line-height: 60px;
+    color: #222;
+}
+h2{
+    font-size: 45px;
+    line-height: 50px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-size: 15px;
+    font-weight: 700;
+}
+p{
+    font-size: 40px;
+    color: #222;
+    margin: 10px 0 20px 0;
+}
+.sekcija-p1{
+    padding: 40px 80px;
+}
+.sekcija-m1{
+    margin: 40px 0;
+}
+button.dugmeNovosti, button.posalji{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+    background-color: #E3e6f3;
+}
+/*naslovna*/
+#zaglavlje{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+    z-index: 999;
+    padding: 20px 80px;
+    background-color: #E3e6f3;
+    position: sticky;
+    top: 0;
+    left: 0
+}
+#navdeo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navdeo li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navdeo li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navdeo li a:hover,
+#navdeo li a.aktivno{
+    color: #088178;
+}
+
+/*kontakt*/
+#kontakt-zaglavlje{
+    text-align: center;
+}
+#kontakt-zaglavlje h2{
+    color: #1a1a1a;
+    text-transform: uppercase;
+}
+#kontakt-zaglavlje p{
+    margin: 0;
+    font-size: 1.7em;
+}
+#kontakt-detalji{
+    display: flex;
+}
+#kontakt-detalji .detalji span{
+    font-size: 30px;
+    font-weight: 600;
+}
+#kontakt-detalji .detalji p{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 30px;
+}
+#kontakt-detalji .forma-detalji form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#kontakt-detalji .forma-detalji form input{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+#kontakt-detalji .forma-detalji form textarea{
+    outline: none;
+    padding: 12px;
+    border: 1px solid #e1e1e1;
+}
+#kontakt-detalji .mapa{
+    margin-left: 50px;
+    width: 55%;
+    height: 500px;
+}
+
+/*hamburger*/
+.meni{
+    background-color: #e3e6f3;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 1;
+}
+.meni.aktivno {
+    right: 0;
+}
+.hamburger{
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-top: 0px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.hamburger span{
+    height: 5px;
+    width: 100%;
+    background-color: #088178;
+    box-shadow: 0 0 3px #e3e6f3;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, 50%);
+    transition: .3s ease;
+}
+.hamburger span:nth-child(1) {
+    top: 25%;
+}
+.hamburger.aktivno span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger span:nth-child(3) {
+    top: 75%;
+}
+
+.hamburger.aktivno{
+background-color:  #088178;
+}
+.hamburger.aktivno span {
+    background-color: white;
+
+}
+.hamburger.aktivno span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburgerM.aktivno span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.aktivno span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media only screen and (max-width: 1200px) {
+.meni {
+width: 35%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.meni {
+width: 30%;
+}
+}
+
+/*footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .kolona{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+    max-width: 150px;
+    max-height: 150px;
+}
+footer h4{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    padding-bottom: 10px;
+}
+footer .zaprati{
+    margin-top: 20px;
+}
+footer .zaprati i{
+    color: #465b52;
+    padding-right: 5px;
+    cursor: pointer;
+}
+footer .plati{
+    font-size: 20px;
+    font-weight: 800;
+}
+footer .plati img{
+    border: 1px solid #088178;
+    border-radius: 5px;
+    margin: 10px 0 15px 0;
+}
+footer .zaprati i:hover{
+    color: #088178;
+}
+footer .prava{
+    width: 100%;
+    text-align: center;
+}
+footer .prava .zaprati{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 800px){
+    #navdeo li a{
+        font-size: 15px;
+    }
+    #navigacija{
+        display: none;
+    }
+    #kontakt-zaglavlje h2{
+        font-size: 15px;
+    }
+    #kontakt-zaglavlje p{
+        font-size: 13px;
+    }
+    .detalji span{
+        font-size: 15px;
+    }
+    .detalji p{
+        font-size: 13px;
+    }
+    .mapa img{
+        visibility: hidden;
+    }
+    footer h4{
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    footer .logo{
+        max-height: 80px;
+    }
+    footer .zaprati{
+        margin-right: 100px;
+        margin-top: 100px;
+    }
+    footer .plati{
+        margin-left: 200px;
+    }
+    footer .plati img{
+        margin-left: -100px;
+    }
+    footer .prava{
+        margin-top: 20px;
+    }
+    footer .kolona img{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #navdeo li a{
+        font-size: 17px;
+    }
+    #kontakt-zaglavlje h2{
+        font-size: 17px;
+    }
+    #kontakt-zaglavlje p{
+        font-size: 15px;
+    }
+    .detalji span{
+        font-size: 17px;
+    }
+    .detalji p{
+        font-size: 15px;
+    }
+    .mapa img{
+        visibility: hidden;
+    }
+    footer h4{
+        font-size: 17px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+    footer .plati{
+        margin-left: 200px;
+    }
+    footer .plati img{
+        margin-left: -100px;
+    }
+    footer .prava{
+        margin-top: 20px;
+    }
+}

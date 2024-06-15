@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BSD Prodavnica Moto Opreme</title>
+    <link rel="stylesheet" href="kontakt.css" />
+  </head>
+  <body>
+    
+    <section id="zaglavlje">
+      <a href="index.html"
+        ><img
+          src="slike/logo.png"
+          class="logo"
+          alt=""
+          width="80"
+          height="80"
+      /></a>
+
+      <div>
+        <ul id="navdeo">
+          <li><a id="navigacija" href="index.html">Početna</a></li>
+          <li><a id="navigacija" href="porucite.html">Poručite</a></li>
+          <li><a id="navigacija" href="onama.html">O Nama</a></li>
+          <li><a id="navigacija" class="aktivno" href="kontakt.html">Kontakt</a></li>
+          <li><a id="navigacija" href="galerija.html">Galerija</a></li>
+          <li> <div class="meni">
+              <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="porucite.html">Poručite</a></li>
+                <li><a href="onama.html">O Nama</a></li>
+                <li><a class="aktivno" href="kontakt.html">Kontakt</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+              </ul>
+              </div>
+              <nav>
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </nav>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <script src="hamburger.js"></script>
+
+    <section id="kontakt-zaglavlje">
+      <h2>Kontakt</h2>
+      <p>Đure Đakovića bb, Zrenjanin 23000</p>
+      <p>Tel. 023/555-555</p>
+      <p>E-mail: tfzr.uns.ac.rs</p>
+      <p>Radnim danima: 08h - 20h</p>
+      <p>Nedeljom ne radimo</p>
+    </section>
+    
+    <section id="kontakt-detalji" class="sekcija-p1">
+      <div class="detalji">
+        <span>Kontaktirajte nas</span>
+        <p>Ukoliko imate bilo kakvih pitanja ili nedoumica, <br>  možete
+          nas kontaktirati preko poruke, broja telefona ili e-maila.
+        </p>
+        <div class="forma-detalji">
+          <form action="" id="kontakt-forma">
+            <input type="text" id="ime" placeholder="Ime i Prezime:">
+            <input type="email" id="email" placeholder="E-mail Adresa:">
+            <input type="text" id="telefon" placeholder="Telefon:">
+            <textarea cols="55" rows="8" id="poruka">Vaša Poruka:</textarea>
+            <button type="submit" class="posalji">Pošalji</button>
+          </form>
+        </div>
+      </div>
+      <div class="mapa">
+        <img src="slike/mapa.png" width="900" height="500">
+      </div>
+    </section>
+
+    <script src="kontakt.js"></script>
+
+    <section id="novosti" class="sekcija-p1 sekcija-m1">
+      <div class="novostekst">
+        <h4>Prijavite se za novosti</h4>
+        <p>
+          Saznajte prvi o svim <span>promocijama</span>, <span>akcijama</span> i
+          ostalim <span>novitetima</span>.
+        </p>
+      </div>
+      <div class="forma">
+          <input id="emailUnos" type="email" placeholder="Vaša e-mail adresa:" required/>
+          <button class="dugmeNovosti" onclick="prikaziProzor()">Prijavi se</button>
+          <div id="prozorPreklapanje" class="prozor-preklapanje">
+            <div id="prozorSadrzaj" class="prozor-sadrzaj"></div>
+            <button onclick="sakrijProzor()">Nazad</button>
+          </div>
+      </div>
+    </section>
+    <link rel="stylesheet" href="novosti.css">
+
+    <script src="novosti.js"></script>
+
+    <footer class="sekcija-p1">
+      <div class="kolona">
+        <img class="logo" src="slike/logo.png" alt="" />
+        <h4>Kontakt</h4>
+        <p><strong>Adresa: </strong> Đure Đakovića bb, Zrenjanin 23000</p>
+        <p><strong>Telefon: </strong> 023/555-555</p>
+        <p><strong>Radno Vreme: </strong> 08:00 - 20:00, Ponedeljak - Subota</p> 
+      </div>
+      <div class="zaprati">
+        <h4>Zapratite Nas</h4>
+        <div class="ikonica">
+          <img src="slike/facebook.png" width="20px" height="20px">
+          <img src="slike/instagram.png" width="20px" height="20px">
+          <img src="slike/twitter.png" width="20px" height="20px">
+        </div>
+      </div>
+        <div class="kol plati">
+          <p>Bezbedan način plaćanja</p>
+          <img src="slike/plati.jpg" alt="" />
+        </div>
+      <div class="prava">
+        <p>© 2024, Aleksandar Boškov SI 25/21</p>
+      </div>
+    </footer>
+  </body>
+</html>

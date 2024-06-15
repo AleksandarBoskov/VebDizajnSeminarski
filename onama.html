@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BSD Prodavnica Moto Opreme</title>
+    <link rel="stylesheet" href="onama.css" />
+  </head>
+  <body>
+
+    <section id="zaglavlje">
+      <a href="index.html"
+        ><img
+          src="slike/logo.png"
+          class="logo"
+          alt=""
+          width="80"
+          height="80"
+      /></a>
+
+      <div>
+        <ul id="navdeo">
+          <li><a id="navigacija" href="index.html">Početna</a></li>
+          <li><a id="navigacija" href="porucite.html">Poručite</a></li>
+          <li><a id="navigacija" class="aktivno" href="onama.html">O Nama</a></li>
+          <li><a id="navigacija" href="kontakt.html">Kontakt</a></li>
+          <li><a id="navigacija" href="galerija.html">Galerija</a></li>
+          <li> <div class="meni">
+              <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="porucite.html">Poručite</a></li>
+                <li><a class="aktivno" href="onama.html">O Nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+              </ul>
+              </div>
+              <nav>
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </nav>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <script src="hamburger.js"></script>
+
+      <section id="onama-zaglavlje">
+        <h2>O Nama</h2>
+      </section>
+
+      <section id="onama">
+        <div class="tekst">
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Quisque sapien velit, 
+                aliquet eget commodo nec, auctor a sapien. Nam eu neque 
+                vulputate diam rhoncus faucibus. Curabitur quis varius 
+                libero. Lorem ipsum dolor sit amet, consectetur adipiscing
+                 elit. Aliquam placerat sem at mauris suscipit porta. 
+                 Cras metus velit, elementum sed pellentesque a, pharetra
+                  eu eros. Etiam facilisis placerat euismod. Nam faucibus 
+                  neque arcu, quis accumsan leo tincidunt varius. In vel 
+                  diam enim. Sed id ultrices ligula. Maecenas at 
+                  urna arcu. Sed quis nulla sapien. Nam felis mauris, 
+                  tincidunt at convallis id, tempor molestie libero. 
+                  Quisque viverra sollicitudin nisl sit amet hendrerit. 
+                  Etiam sit amet arcu sem. Morbi eu nibh condimentum, 
+                  interdum est quis, tempor nisi. Vivamus convallis erat 
+                  in pharetra elementum. Phasellus metus neque, commodo 
+                  vitae venenatis sed, pellentesque non purus. 
+                  Pellentesque egestas convallis suscipit. Ut luctus, 
+                  leo quis porta vulputate, purus purus pellentesque ex, 
+                  id consequat mi nisl quis eros. Integer ornare libero quis 
+                  risus fermentum consequat. Mauris pharetra odio sagittis, 
+                  vulputate magna at, lobortis nulla. Proin efficitur, nisi 
+                  vel finibus elementum, orci sem volutpat eros, eget ultrices 
+                  velit mi.</p>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+        </div>
+      </section>
+
+
+      <section id="novosti" class="sekcija-p1 sekcija-m1">
+      <div class="novostekst">
+        <h4>Prijavite se za novosti</h4>
+        <p>
+          Saznajte prvi o svim <span>promocijama</span>, <span>akcijama</span> i
+          ostalim <span>novitetima</span>.
+        </p>
+      </div>
+      <div class="forma">
+          <input id="emailUnos" type="email" placeholder="Vaša e-mail adresa:" required/>
+          <button class="dugmeNovosti" onclick="prikaziProzor()">Prijavi se</button>
+          <div id="prozorPreklapanje" class="prozor-preklapanje">
+            <div id="prozorSadrzaj" class="prozor-sadrzaj"></div>
+            <button onclick="sakrijProzor()">Nazad</button>
+          </div>
+      </div>
+    </section>
+      <link rel="stylesheet" href="novosti.css">
+  
+      <script src="novosti.js"></script>
+
+    <footer class="sekcija-p1">
+      <div class="kolona">
+        <img class="logo" src="slike/logo.png" alt="" />
+        <h4>Kontakt</h4>
+        <p><strong>Adresa: </strong> Đure Đakovića bb, Zrenjanin 23000</p>
+        <p><strong>Telefon: </strong> 023/555-555</p>
+        <p><strong>Radno Vreme: </strong> 08:00 - 20:00, Ponedeljak - Subota</p> 
+      </div>
+      <div class="zaprati">
+        <h4>Zapratite Nas</h4>
+        <div class="ikonica">
+          <img src="slike/facebook.png" width="20px" height="20px">
+          <img src="slike/instagram.png" width="20px" height="20px">
+          <img src="slike/twitter.png" width="20px" height="20px">
+        </div>
+      </div>
+        <div class="kol plati">
+          <p>Bezbedan način plaćanja</p>
+          <img src="slike/plati.jpg" alt="" />
+        </div>
+      <div class="prava">
+        <p>© 2024, Aleksandar Boškov SI 25/21</p>
+      </div>
+    </footer>
+  </body>
+</html>
